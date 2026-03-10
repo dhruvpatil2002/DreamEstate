@@ -30,37 +30,38 @@ export default function SignInPage() {
             <p className="text-white/90 text-lg">Sign in to your account</p>
           </div>
           <SignIn 
-            routing="path"
-            path="/sign-in"
-            signInUrl="/sign-in"
-            // ✅ redirectUrl REMOVED - handled by env vars
-            appearance={{
-              elements: {
-                formButtonPrimary: 
-                  "w-full h-14 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-lg font-semibold rounded-2xl shadow-xl border-0",
-                formInput: 
-                  "h-14 bg-white/90 backdrop-blur-sm border-2 border-white/30 rounded-2xl text-lg focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20",
-                formFieldLabel: 
-                  "text-white font-semibold text-lg",
-                formDividerHeadline: 
-                  "text-white/70 font-semibold",
-                socialButtonsBlockButton: 
-                  "h-14 bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:bg-white/30 text-white font-semibold rounded-2xl transition-all duration-300",
-                footerActionLink: 
-                  "text-emerald-200 hover:text-white font-semibold",
-                footerParagraph: 
-                  "text-white/80"
-              },
-              variables: {
-                colorPrimary: '#10B981',
-                colorBackground: 'rgba(255, 255, 255, 0.1)',
-                colorText: '#FFFFFF',
-                colorInputBackground: 'rgba(255, 255, 255, 0.9)',
-                colorInputText: '#1F2937',
-                borderRadius: '24px',
-              }
-            }}
-          />
+  routing="path"
+  path="/sign-in"
+  signInUrl="/sign-in"
+  // ❌ DELETE redirectUrl line completely
+  appearance={{
+    elements: {
+      formButtonPrimary: 
+        "w-full h-14 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-lg font-semibold rounded-2xl shadow-xl border-0",
+      formInput: 
+        "h-14 bg-white/90 backdrop-blur-sm border-2 border-white/30 rounded-2xl text-lg focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20",
+      formFieldLabel: 
+        "text-white font-semibold text-lg",
+      formDividerHeadline: 
+        "text-white/70 font-semibold",
+      socialButtonsBlockButton: 
+        "h-14 bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:bg-white/30 text-white font-semibold rounded-2xl transition-all duration-300",
+      footerActionLink: 
+        "text-emerald-200 hover:text-white font-semibold",
+      footerParagraph: 
+        "text-white/80"
+    },
+    variables: {
+      colorPrimary: '#10B981',
+      colorBackground: 'rgba(255, 255, 255, 0.1)',
+      colorText: '#FFFFFF',
+      colorInputBackground: 'rgba(255, 255, 255, 0.9)',
+      colorInputText: '#1F2937',
+      borderRadius: '24px',
+    }
+  }}
+/>
+
         </div>
 
         {/* Footer Link */}
