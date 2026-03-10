@@ -45,5 +45,8 @@
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "node-domexception": "2.0.0"
   }
 }
