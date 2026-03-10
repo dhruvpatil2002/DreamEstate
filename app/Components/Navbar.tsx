@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useUser, UserButton, SignInButton, SignOutButton } from '@clerk/nextjs'
+import { useUser, UserButton, SignInButton } from '@clerk/nextjs'
 import { Search, Menu, X } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
@@ -39,7 +39,7 @@ export default function Navbar() {
     <nav className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo - unchanged */}
+          {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -54,7 +54,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Menu - ✅ FIXED */}
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -80,7 +80,7 @@ export default function Navbar() {
               <Search className="absolute left-4 top-3.5 w-5 h-5 text-gray-400 pointer-events-none" />
             </form>
 
-            {isSignedIn ? <UserButton afterSignOutUrl="/" /> : (
+            {isSignedIn ? <UserButton /> : (
               <SignInButton mode="modal">
                 <button className="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-2xl hover:bg-emerald-700 transition-colors">
                   Sign In
@@ -99,7 +99,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu - ✅ FIXED */}
+        {/* Mobile Menu */}
         {mobileOpen && (
           <div className="md:hidden mt-4 pt-4 border-t border-gray-100">
             <div className="flex flex-col gap-4">

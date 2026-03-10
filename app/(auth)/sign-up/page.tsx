@@ -13,7 +13,6 @@ export default function SignUpPage() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-md"
       >
-        {/* Back Link */}
         <Link 
           href="/" 
           className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
@@ -21,7 +20,6 @@ export default function SignUpPage() {
           ← Back to Home
         </Link>
 
-        {/* Clerk SignUp Component - FIXED */}
         <div className="bg-white/20 backdrop-blur-xl rounded-3xl p-8 border border-white/30 shadow-2xl">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent mb-4">
@@ -32,7 +30,6 @@ export default function SignUpPage() {
           <SignUp 
             routing="path"
             path="/sign-up"
-            // ✅ REMOVED: signUpUrl + redirectUrl
             appearance={{
               elements: {
                 formButtonPrimary: 
@@ -62,7 +59,6 @@ export default function SignUpPage() {
           />
         </div>
 
-        {/* Footer Link */}
         <p className="text-center mt-8 text-white/80">
           Already have an account?{' '}
           <Link href="/sign-in" className="text-emerald-200 font-semibold hover:text-white">
