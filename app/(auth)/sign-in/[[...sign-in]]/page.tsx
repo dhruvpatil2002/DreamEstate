@@ -21,7 +21,7 @@ export default function SignInPage() {
           ← Back to Home
         </Link>
 
-        {/* Clerk SignIn Component */}
+        {/* Clerk SignIn Component - FIXED */}
         <div className="bg-white/20 backdrop-blur-xl rounded-3xl p-8 border border-white/30 shadow-2xl">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent mb-4">
@@ -33,7 +33,7 @@ export default function SignInPage() {
             routing="path"
             path="/sign-in"
             signInUrl="/sign-in"
-            redirectUrl="/dashboard"
+            // ✅ redirectUrl REMOVED - handled by env vars
             appearance={{
               elements: {
                 formButtonPrimary: 
