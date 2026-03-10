@@ -12,7 +12,7 @@ import ReviewCarousel from "@/app/Components/ReviewCarousel"
 import CitiesCarousel from "@/app/Components/CitiesCarousel"
 import RentProperties
  from "@/app/Components/RentProperties"
- import MapView from "@/app/Components/MapView"
+
  import PropertyAddForm from "@/app/Components/PropertyAddForm"
 import {
   Search, MapPin, BedDouble, Bath, Square, ArrowRight,
